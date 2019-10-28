@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+    <script src="../jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+            /* $("p").on("click", function(){
+                $(this).css("fontSize", "20px");
+            });
+            $("button").click(function(){
+                $("p").off("click");
+            }); */
+            /* $("p").on({'click': function(){
+                    $(this).css("fontSize", "20px");
+                },
+                'dblclick': function(){
+                     $(this).css("color", "red");
+            }}); */
+            var i = 1;
+            $("#btnClick").one("click", function(){
+                $("div").text(i);
+                i++;
+            });
+            /*
+            $("#btnClick").on("click", function(){
+                $("div").text(i);
+                i++;
+            });*/
+            /* $("p").on("click", function(){
+                $(this).css("background-color", "pink");
+            });
+            $("p:first").click(function(){
+                $("p:last").trigger("click");
+            });*/
+        });      
+    </script>
+</head>
+
+<body>
+<div></div>
+<p>First Paragraph</p>
+<p>Second Paragraph</p>
+<button id="btnClick">Click</button>
+</body>
+</html>
+
+
+

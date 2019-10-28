@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice jQuery</title>
+    <style>
+        div
+        {
+            width:150px;
+            height:150px;
+            border:2px solid black;
+            margin:10px;
+            padding:10px;
+        }
+    </style>
+    <script src="../jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+            $("button").click(function(){
+                //$("div").fadeIn(5000);
+                //$("div").fadeIn(10000);
+                //$("div").fadeOut(5000);
+                $("div").fadeToggle(5000);
+                //$("div:first").fadeTo(5000, ".5");
+                //$("div:first").fadeTo(5000, ".2");
+            });
+        });      
+    </script>
+</head>
+
+<body>
+    <div style="background-color:purple;"></div>
+    <div hidden style="background-color:green;"></div><br />
+    <button id="btnClick">Click</button>
+</body>
+</html>
+
+
+

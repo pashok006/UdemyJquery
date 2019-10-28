@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>$.each() Method</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+var nameArr = ["Aaron", "Ann", "Aidan", "Sarah", "Abel"];
+var numberObj = { a: 1, b:10, c:100, d:1000};
+var sum = 0;
+$("div").each(function(index, value){
+	$("#result").append(index + " : " + $(this).attr("id") + "<br />");
+	});
+	
+});
+</script>
+</head>
+<body>
+	<ul>
+		<li>Jasmine</li>
+		<li>Rose</li>
+		<li>Lotus</li>
+		<li>Tulips</li>
+	</ul>
+<div id="result"></div>
+<div id="test"></div>
+</body>
+</html>

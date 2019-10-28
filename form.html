@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form jquery</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<script src="./jquery-3.4.1.js"></script>
+<script>
+$(document).ready( function(){
+$('input').focus(function(){
+    $(this).css('background-color','lightgray');
+})
+$('input').blur(function(){
+    $(this).css('background-color','white');
+})
+
+})
+</script>
+
+<body>
+    <label for="fname">FirstName</label>
+    <input type="text" id="fname">
+    <label for="lname">LastName</label>
+    <input type="text" id="lname">
+    <button> submit </buton>
+    
+</body>
+</html>

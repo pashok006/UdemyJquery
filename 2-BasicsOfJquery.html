@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<!-- <script src="./jquery-3.4.1.js"></script> -->
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+button {
+    margin-top: 1%
+}
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready( function(){
+    // $("*").css('background-color','yellow');
+
+    /* $("#firstbtn").click(function(){
+        $('#Eng,#p1').css('color','red');
+    }) */
+
+    /* $("#firstbtn").click(function(){ 
+        $('.subjects').css('color','red');
+    }) */
+
+    /* $("p").hover(function(){
+        $(this).css({'background-color':'yellow','cursor':'pointer'});
+        
+    })
+    $("p").mouseleave(function(){
+        $(this).css('background-color','white');
+    }) */
+
+    /* $("#firstbtn").click(function(){
+        $('[class!=languages]').css({'background-color':'yellow'});
+        
+    }) */
+
+    /* $("#firstbtn").click(function(){
+        $('[class$=s]').css({'background-color':'yellow'});
+        
+    }) */
+    
+   /*  $("#firstbtn").click(function(){
+        $('[id~=Eng]').css({'background-color':'yellow'});
+        
+    }) */
+
+    $("#firstbtn").click(function(){
+        $('tr:even').css({'background-color':'yellow'});
+        
+    })
+    $("#secondbtn").click(function(){
+        $('tr:odd').css({'background-color':'pink'});
+        
+    })
+
+})
+
+</script>
+<body>
+    <p> First paragraph welcome  jQuery is a JavaScript Library.</p>
+
+    <ul class="languages">
+        <li id="Eng">English</li>
+        <li id="Eng Tel">Tamil</li>
+        <li id="mal">Malayalam</li>
+        <li id="tel">Telugu</li>
+    </ul>
+    
+    <p>Second paragraph The Write Less, Do More.</p>
+
+    <ol class="subjects">
+        <li id="math">Mathemetical</li>
+        <li id="chemi">Chemistry</li>
+        <li id="phy">Physics</li>
+        <li id="scs">Sciences</li>
+    </ol>
+   
+    <p>  simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.</p>
+
+    <table>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+      </table>
+    <button id="firstbtn"> first button</button>
+    <button id="secondbtn"> second button</button>
+    
+</body>
+</html>

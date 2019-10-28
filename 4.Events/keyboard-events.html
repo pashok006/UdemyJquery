@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+    <style>
+        #txtName
+        {
+           font-size: 30px; 
+        }
+    </style>
+    <!-- Add reference to latest jQuery file -->
+    <script src="../jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+   
+       $(document).ready(function(){
+            /* $("p").on("click", function(){
+                $(this).css("background-color", "pink");
+            });
+            
+            $("p:first").click(function(){
+                $("p:last").trigger("click");
+            }); */
+
+            /* $('#txtName').keydown(function() {
+                $(this).css('color','red')
+            })
+            $('#txtName').keyup(function(){
+                $(this).css('color','blue')
+            }) */
+            
+            /* $('#txtName').on('keydown', function() {
+                $(this).css('color','red')
+            })
+            $('#txtName').on('keyup', function(){
+                $(this).css('color','blue')
+            }) */
+
+            $('#txtName').on({keydown:function() {
+                $(this).css('color','red')
+            }},{keyup:function(){
+                $(this).css('color','blue')
+            }})
+
+            /* $('#txtName').on('keydown click', function() {
+                $(this).css('color','red');
+            })
+            $('#txtName').on('keyup ', function() {
+                $(this).css('color','green');
+            }) */
+            
+
+
+        });      
+    </script>
+</head>
+
+<body>
+<div></div>
+<input type="text" id="txtName" />
+</body>
+</html>
+
+
+
